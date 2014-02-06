@@ -11,11 +11,11 @@
 // 65536
 // first commit will be for this exercise
 
-$a = 2;
+$a = 0;
 
 do {
 	echo "\$a is equal to {$a}\n";
-	$a = $a * $a;
-} while ($a < 1000000);
+	$a += 2;
+} while ($a < 100);
 
 ?>
