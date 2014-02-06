@@ -8,7 +8,7 @@ if ($a == $b) {
 	echo "$a is equal to $b";
 }
 
-if ($a != $b {
+if ($a != $b) {
 	echo "$a is not equal to $b";
 }
 
