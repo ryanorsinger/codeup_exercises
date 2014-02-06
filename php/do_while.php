@@ -11,11 +11,15 @@
 // 65536
 // first commit will be for this exercise
 
-$a = 0;
+$a = 100;
 
 do {
 	echo "\$a is equal to {$a}\n";
-	$a += 2;
-} while ($a < 100);
+	$a -= 5; 
+	//$a 
+} while ($a >= -10);
+
+// and this is the count by 5's from 100 to -10 exercise. 
+// i fixed a few typos on operators in this next git add .
 
 ?>
