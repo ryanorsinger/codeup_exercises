@@ -11,6 +11,6 @@ while ($test <= $targetnum) {
 	$test++;
 } 
  	echo "\t\nDone!\n \$test is now less than or equal to \$targetnum\n";
- 	echo "\t\t$test is now less than or equal to $targetnum\n\n";
+ 	echo "\t\t$test is now less than or equal to $targetnum\n\n";`
 
  	?>
