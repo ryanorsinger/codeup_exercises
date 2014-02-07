@@ -33,13 +33,6 @@ $count = 0;
 		// Get the user guess
 		$user_guess = fgets(STDIN); 
 
-		// Make sure that the user actually inputs an integer.
-		$user_guess_type = (is_int($user_guess));
-			// 
-			if ($user_guess_type = FALSE) {
-			fwrite(STDOUT, "\t I'm sorry, Dave. I'm afraid I can't let you do that. \n\t The guess needs to be an integer (a counting number) between 1 and 100.\n");
-			}
-
 			if ($user_guess < $number) { // Check if the guess is lower than the target number
 			fwrite(STDOUT, "\t\tTOO LOW! GUESS HIGHER! \n");	
 			}

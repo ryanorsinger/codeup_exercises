@@ -4,6 +4,8 @@
 // We should see 15 and 25 and 35 and 45 and 55 and 65 because of the incorrect nesting
 // But now I want to avoid getting the output
 // "0 is even" and "0 is divisable by five"
+// but I'm cheating a bit here because I set $number to 1
+// 
 
 $number = 1;
 
