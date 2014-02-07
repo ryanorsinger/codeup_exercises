@@ -1,6 +1,6 @@
 <?php
 
-echo "\n\n\n";
+echo "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 
 // Welcome the user to the game
 echo "Welcome to the HIGH - LOW game! \n";
@@ -38,14 +38,9 @@ $count = 0;
 			}
 
 			if ($user_guess == $number) {
-				exit(0);           //exit if they guess it correctly 
-								//EXCEPT THAT IN THIS VERSION THE EXIT HAPPENS BEFORE THE BELOW STATEMENTS
-								// SO I'M COMMITTING THIS CHANGE TO GIT AS A LESSON TO MYSELF!
-								// "Great software happens in the waste basket" - Jason Straughan re: Feynman quote
-				
 				echo "Congratulations, you've WON the HIGH-LOW game, $first_name";
 				echo "It took you $count number of attempts to hit the target. \n GREAT JOB!! \n";
-
+				exit(0);
 			}
 			
 		} while ($userguess != $number);
