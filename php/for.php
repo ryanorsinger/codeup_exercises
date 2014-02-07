@@ -18,6 +18,12 @@ fwrite(STDOUT, "Input your ending number\n");
 // This assigns the user's input to the $ending_number variable.
 $ending_number = intval(fgets(STDIN));
 
+// Prompt the user to supply their own incrementer (count by 1 or 2 or 4 or 5)
+fwrite(STDOUT, "Input the number you want to increment by\n");
+
+// This assigns the user's input to the $user_incrementer 
+$user_incrementer = intval(fgets(STDIN));
+
 // Display all the numbers from the starting to ending number using a FOR loop
 
 // Think about this like a While loop
@@ -25,7 +31,7 @@ $ending_number = intval(fgets(STDIN));
 // 
 echo "\n\n\n";
 
-for ($i = $starting_number; $i <= $ending_number; $i++) {
+for ($i = $starting_number; $i <= $ending_number; $i = $i + $user_incrementer) {
 	
 	echo "$i\n";
 }
