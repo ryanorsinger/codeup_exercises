@@ -13,7 +13,13 @@ fwrite(STDOUT, "Input your starting number.\n");
 // set $ending_number equal to the user's input and set the variable as an integer of that input
 $ending_number = intval(fgets(STDIN));
 
-for ($i = $starting_number; $i <= $ending_number; $i = $i + $starting_number) {
+// Prompt user for their incrementing number
+fwrite(STDOUT, "Input the number by which you want to increment.\n");
+
+// declare $user_incrementer variable and make sure that it's an integer.
+$user_incrementer = intval(fgets(STDIN));
+
+for ($i = $starting_number; $i <= $ending_number; $i += $user_incrementer) {
 	echo "$i\n";
 }
 
