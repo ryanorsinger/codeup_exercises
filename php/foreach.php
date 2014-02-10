@@ -8,10 +8,14 @@ $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, 
 
 	foreach($things as $items) {
 	 	
-	 	// For each $item in the $things array, if the $item is an array, say that it's an array.
-	 		 	
+// We have an array(1,2,3) inside the array called $things.	 	
+// We use a nested foreach to deal with nested arrays.
+		// we use a nested foreach to evalute and array inside an array... etc.. ad nauseum
+
 	 	if(is_array($items)) {
-	 		echo "{$item} is an Array\n";
+	 		foreach($items as $numbers) 
+	 			echo "{$numbers} is part of an Array\n";
+
 	 	} else {
 	 		echo "$items\n";
 	 	}
