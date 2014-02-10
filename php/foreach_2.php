@@ -23,11 +23,22 @@ $books = array(
     )
 );
 
-foreach(
-	)
+// this array is an associative array.
+// I have key => value pairs
+// Normally, I want to use the $key and $value practice
+// In this case, it's better to be descriptive
+// So I'm naming the $key as $title and the $value as $book
+
+foreach($books as $title => $book) {
+	echo $title . "\n" . var_dump(book);
+}		
+	
+
+
 
 // First exercise is to create a loop that iterates through each book
 // Then iterates through each book's keys and values.
+
 // Have it output the book's title
 // then list the key value pairs 
 
