@@ -6,11 +6,25 @@
 
 $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, (string) 11);
 
-foreach($things as $item) {
+	foreach($things as $items) {
+	 	
+	 	// For each $item in the $things array, if the $item is an array, say that it's an array.
+	 		 	
+	 	if(is_array($items)) {
+	 		echo "{$item} is an Array\n";
+	 	} else {
+	 		echo "$items\n";
+	 	}
+	}
+
+
+
+
+/*foreach($things as $item) {
 	if (is_scalar($item)) {
 		echo "{$item} is a scalar.\n";
 	}
-}
+}*/
 
 
 /*foreach($things as $item) {
