@@ -1,8 +1,19 @@
 <?php
 
+// This exercise is to check if elements in the array are scalars.
+// Scalars are integers, floats, strings, or booleans.
+// Arrays, objects, and resources are not scalars.
+
 $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, (string) 11);
 
 foreach($things as $item) {
+	if (is_scalar($item)) {
+		echo "{$item} is a scalar.\n";
+	}
+}
+
+
+/*foreach($things as $item) {
 	
 	if (is_int($item)) {
 		echo "{$item} is an integer.\n";
@@ -22,7 +33,7 @@ foreach($things as $item) {
 	} elseif (is_string($item)) {
 		echo "{$item} is a string.\n";
 	}
-}
+}*/
 
 
 // $animal_types = array('dogs', 'cats', 'birds', 'narwhals');
@@ -39,6 +50,5 @@ foreach($things as $item) {
 		echo "{$item} is not a string or a number\n";
 	}
 }*/
-
 
 ?>
