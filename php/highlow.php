@@ -12,7 +12,7 @@ echo "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 		echo "You have the right amount of arguments, but they both need to be numeric! \n"; // give an error
 		exit(0);																			 // exit
 	}
-	
+
 // create min and max variables and set them to be integers of the arguments
 // this is because PHP passes or casts arguments from the command line as strings by default!!!
 $min = intval($argv[1]);
@@ -56,7 +56,7 @@ $count = 0;
 			fwrite(STDOUT, "\t\tTOO LOW! GUESS HIGHER! \n");	
 			}  
 
-			// if user's guess is less than the numbe,r it outputs "HIGHER"
+			// if user's guess is less than the number it outputs "HIGHER"
 			if ($user_guess > $number) {  
 			fwrite(STDOUT, "\t\tTOO HIGH! GUESS LOWER\n"); 
 			}

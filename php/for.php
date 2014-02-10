@@ -24,6 +24,11 @@ fwrite(STDOUT, "Input the number you want to increment by\n");
 // This assigns the user's input to the $user_incrementer 
 $user_incrementer = intval(fgets(STDIN));
 
+// if the user incrementer is not entered, then default the incrementer to 1.
+	if (isset($user_incrementer) == FALSE) {
+	$user_incrementer = 1;
+	}
+
 // Display all the numbers from the starting to ending number using a FOR loop
 
 // Think about this like a While loop

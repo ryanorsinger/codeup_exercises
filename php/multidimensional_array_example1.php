@@ -1,5 +1,7 @@
 <?php
 
+// example 1 from CONTROL STRUCTURES II 3 of 5
+
 $students = array(
     array('name' => 'Virginia Potts', 'age' => 29),
     array('name' => 'Elon Musk', 'age' => 42),
