@@ -10,7 +10,9 @@ $students = array(
 );
 
 foreach($students as $student) {
-	echo "{$student['name']} is {$student['age']} years old.\n";
+	foreach ($student as $key => $value) {
+		echo "Student's $key is $value\n";	
+	}
 }
 
 ?>
