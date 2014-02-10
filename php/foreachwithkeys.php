@@ -1,11 +1,22 @@
 <?php
 
-$data = array('first_name' => 'Jason', 'last_name' => 'Straughan');
+$instructors = array(
+	array('first_name' => 'Jason', 'last_name' => 'Straughan'),
+	array('first name' => 'Isaac', 'last_name' => 'Castillo')
+	);
 
-foreach($data as $key => $data_point) {
-	echo "{$key} has a value of {$data_point}\n";
+foreach ($instructors as $instructor) {
+		foreach($instructor as $key => $name) {
+			echo "$name\n";
+		}
 }
 
+
+/*foreach($data as $key => $data_point) {
+	if ($key = 'first_name')
+	echo "{$key} has a value of {$data_point}\n";
+}
+*/
 
 
 // So below is a way of using foreach to grab the values of the array
