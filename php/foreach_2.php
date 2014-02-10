@@ -30,13 +30,22 @@ $books = array(
 // So I'm naming the $key as $title and the $value as $book
 
 foreach($books as $title => $book) {
-	echo $title . "\n";
-
-	foreach ($book as $key => $value) {
-		echo $key . " " . $value . "\n";
+	if ($book['published'] > 1950) {
+		echo $title . "\n";
+		echo "Published: " . $book['published'] . "\n";
+		echo "Author: " . $book['author'] . "\n";
+		echo "Pages: " . $book['pages'] . "\n";
 	}
-
 }
+
+
+
+
+	// foreach ($book as $key => $value) {
+	// 	echo $key . " " . $value . "\n";
+	// }
+
+
 	
 
 
