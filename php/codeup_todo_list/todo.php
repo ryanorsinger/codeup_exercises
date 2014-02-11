@@ -8,10 +8,14 @@ $items = array();
 
 // The loop!
 do {
-    // Iterate through list items
+    /// Iterate through list items
     foreach ($items as $key => $item) {
         // Display each item and a newline
-        echo "[{$key}] {$item}\n";
+        //var_dump($key);
+            $key2 = $key + 1;
+            echo "[" . $key2 . "] {$item}\n";
+            //var_dump($key);
+        }
     }
 
     // Show the menu options
@@ -24,7 +28,7 @@ do {
     // A pragmatic way to do this is to set the $input 
     // Use the command strtoupper. This capitalizes all characters
 
-    $input = (strtoupper(trim(fgets(STDIN)));
+    $input = (strtoupper(trim(fgets(STDIN))));
 
 
     // Check for actionable input
@@ -44,6 +48,7 @@ do {
         // Remove from array
         unset($items[$key]);
     } /while ($input != 'Q');
+
 // Exit when input is (Q)uit or (q)uit
 //  } while (($input != 'Q') && ($input != 'q'));
 //      is equal to
