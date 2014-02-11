@@ -19,26 +19,36 @@ do {
 
     // Get the input from user
     // Use trim() to remove whitespace and newlines
-    $input = trim(fgets(STDIN));
+
+    // We need to make the user input portion user-proof
+    // A pragmatic way to do this is to set the $input 
+    // Use the command strtoupper. This capitalizes all characters
+
+    $input = (strtoupper(trim(fgets(STDIN)));
+
 
     // Check for actionable input
-    if (($input == 'N') || ($input == 'n')) {
+        // STRTOUPPER capitalalized the string of
+        // user input in $input.
+
+    if ($input == 'N') {
         // Ask for entry
         echo 'Enter item: ';
         // Add entry to list array
         $items[] = trim(fgets(STDIN));
-    } elseif (($input == 'R') || ($input == 'r')) {
+    } elseif ($input == 'R') {
         // Remove which item?
         echo 'Enter item number to remove: ';
         // Get array key
         $key = trim(fgets(STDIN));
         // Remove from array
         unset($items[$key]);
-    }
+    } /while ($input != 'Q');
 // Exit when input is (Q)uit or (q)uit
-//} while (($input != 'Q') && ($input != 'q'));
-
-} while (!($foo || $bar));
+//  } while (($input != 'Q') && ($input != 'q'));
+//      is equal to
+//  } while ((!($foo || $bar)));
+// but since this version capitalizes all user $input
 
 
 
