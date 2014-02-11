@@ -1,6 +1,20 @@
 <?php
 // lecture
 
+// Declare that $num1 and $num2 are equal to the arguments passed when running the php
+
+$num1 = $argv[1];
+$num2 = $argv[2];
+
+function add($num1 = 0, $num2 = 0)) {
+		if (is_numeric($num1) && is_numeric($num2)) {
+		} else { 
+		   echo "ERROR!!" . PHP_EOL . "Both arguments should be numbers." . PHP_EOL;
+		}
+}
+
+add(3.1315926, 20);
+
 // I set $num2 = 0 in the function arguments
 // That means that $num2 will default to zero
 // Unless or until I pass a second argument into the function.
@@ -25,17 +39,17 @@
 
 // below, we set the default argument for $newline in the function trim_with_new_line
 // Our function trim_with_new_lines throws the arguments into an if/else loop 
-// if 
+// // if 
 
-function trim_with_new_line($item, $newline = TRUE) {
-	if ($newline == TRUE) {
-		echo trim($item) . PHP_EOL;
-		} else { 
-		echo trim($item) . PHP_EOL;
-		}	
-	}
+// function trim_with_new_line($item, $newline = TRUE) {
+// 	if ($newline == TRUE) {
+// 		echo trim($item) . PHP_EOL;
+// 		} else { 
+// 		echo trim($item) . PHP_EOL;
+// 		}	
+// 	}
 
-trim_with_new_line('                             Ryan       ');
+// trim_with_new_line('                             Ryan       ');
 
 
 ?>
