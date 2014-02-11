@@ -1,14 +1,18 @@
 <?php
 
-// I want to use the parameters_are_valid function to return TRUE or FALSE
+// Prompt the user for their first number
+fwrite(STDOUT, "Input your first number." . PHP_EOL);
+$num1 = intval(fgets(STDIN)));
 
-function parameters_are_valid($a, $b) {
-// if either $a or $b are not numeric, then I want to run my error checker
-// If at least one of my variables is not numeric
+// Prompt the user for their second number
+fwrite(STDOUT, "Input your second number." . PHP_EOL);
+$num2 = (intval(fgets(STDIN)));
 
-	//if (!is_numeric($a) && !is_numeric($b)) {
-	// if either one of $a or $b is not numberic = TRUE
-	// then do what's in the curly brackets to kick my error message
+$a = $num1;
+$b = $num2;
+
+function validate($a, $b) {
+
 	if (!($a || $b)) {
 		echo "Parameters must both be numeric\n";
 		var_dump($a);
@@ -16,7 +20,8 @@ function parameters_are_valid($a, $b) {
 		//	exit(0) is the old way to get out of everything. 
 		// returning a value from the function is much more useful than just exiting!
 		return false;
-	} 
+		} else { return true;
+	}
 }
 
 

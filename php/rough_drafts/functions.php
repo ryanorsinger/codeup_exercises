@@ -27,7 +27,10 @@ function add($a, $b) {
 
 	echo "\$a inside the function is $a\n";
 	echo "\$b inside the function is $b\n";
-//	echo "\$c inside the function is $c\n";
+//	echo "\$c inside the function is $c\n"
+
+//	NON-DEFAULTING or 
+
 	// echo var_dump($a) . PHP_EOL;
 	// echo var_dump($b) . PHP_EOL;
 	// echo var_dump($c) . PHP_EOL;
