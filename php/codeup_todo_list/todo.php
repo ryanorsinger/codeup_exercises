@@ -36,7 +36,9 @@ do {
         unset($items[$key]);
     }
 // Exit when input is (Q)uit or (q)uit
-} while (($input != 'Q') && ($input != 'q'));
+//} while (($input != 'Q') && ($input != 'q'));
+
+} while (!($foo || $bar));
 
 
 
@@ -46,3 +48,5 @@ echo "Goodbye!\n";
 
 // Exit with 0 errors
 exit(0);
+
+?>
