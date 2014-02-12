@@ -4,8 +4,14 @@ $nothing = NULL;
 $something = '';
 $array = array(1,2,3);
 
+$things = $array($nothing, $something, $array);
+
 // Create a function that checks if a variable is set or empty, 
 // and then display "$variable_name is SET|EMPTY"
+
+foreach($nothing is $key => $value) {
+	
+}
 
 
 isempty($)
