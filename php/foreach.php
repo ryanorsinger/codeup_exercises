@@ -1,5 +1,13 @@
 <?php
 
+// We cna iterate over any type of array, not just integers.
+$farm_animals = array('veal', 'force-fed goose', 'opportunities for wind power', 'dogs', 'goats', 'sheep', 'veal','self-plucking-chickens', 'self_licking_icecream_cone', 'pigs', 'split_tail hog', 'peach', 'apples');
+
+foreach($farm_animals as $animal) {
+	echo "OL' McDonald had a farm, and on that farm he raised some {$animal}\n";
+}
+
+
 // while this works, this exists a more pragmatic approach 
 // $numbers = array(1,2,3,4,5);
 
@@ -13,13 +21,13 @@
 	// statement
 //}
 
-$numbers = array(1,2,3,4,5,6,7,8,9,10);
-foreach($numbers as $value) {
-	$new_number = $value * 2;
-	echo ("$value * 2 is {$new_number}\n");
+// $numbers = array(1,2,3,4,5,6,7,8,9,10);
+// foreach($numbers as $value) {
+// 	$new_number = $value * 2;
+// 	echo ("$value * 2 is {$new_number}\n");
 
-	echo "\$number as {$value} \n";
-}
+// 	echo "\$number as {$value} \n";
+// }
 
 
 

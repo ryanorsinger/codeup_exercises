@@ -26,7 +26,10 @@ do {
 
     // We need to make the user input portion user-proof
     // A pragmatic way to do this is to set the $input 
+    
     // Use the command strtoupper. This capitalizes all characters
+    // Rather than checking the lower cased-ness or capitalization of each entry
+    // strtouppour(makes it all upper case)
 
     $input = (strtoupper(trim(fgets(STDIN))));
 
