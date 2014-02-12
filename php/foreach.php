@@ -1,7 +1,7 @@
 <?php
 
 // We cna iterate over any type of array, not just integers.
-$farm_animals = array('veal', 'force-fed goose', 'opportunities for wind power', 'dogs', 'goats', 'sheep', 'veal','self-plucking-chickens', 'self_licking_icecream_cone', 'pigs', 'split_tail hog', 'peach', 'apples');
+$farm_animals = array('veal', 'force-fed goose', 'opportunities for wind power', 'dogs', 'goats', 'sheep', 'veal','self-plucking-chickens', 'peach trees', 'apple trees', 'soybean plants', 'fractionary ownership of mineral, oil, and water rights, yay!');
 
 foreach($farm_animals as $animal) {
 	echo "OL' McDonald had a farm, and on that farm he raised some {$animal}\n";
