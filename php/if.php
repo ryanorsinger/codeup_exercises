@@ -1,5 +1,7 @@
 <?php
 
+// Is there a more pragmatic way to express and state what I'm after in this exercise?
+
 // Control Structures I
 // Because computers are based on boolean logic,
 // Setting conditionals that test for TRUE or FALSE
@@ -23,8 +25,36 @@ if ($a != $b) {
 	echo "$a is not equal to $b" . PHP_EOL;
 }
 
+if ($a < $b) {
+	echo "$a is less than $b" . PHP_EOL;
+}
 
+if ($b > $a) {
+	echo "$b is greater than $a" . PHP_EOL;
+}
 
+if ($b >= $c) {
+	echo "$b is greater than or equal to $c" . PHP_EOL;
+}
 
+if ($b <= $c) {
+	echo "$b is less than or equal to $c" . PHP_EOL;
+}
+
+if ($b == $c) {
+	echo "$b is equal to $c" . PHP_EOL;
+}
+
+if ($b === $c) {
+	echo "$b is identical to $c" . PHP_EOL;
+}
+
+if ($b != $c) {
+	echo "$b is not equal to $c" . PHP_EOL;
+}
+
+if ($b !== $c) {
+	echo "$b is not identical to $c" . PHP_EOL;
+}
 
 ?>
