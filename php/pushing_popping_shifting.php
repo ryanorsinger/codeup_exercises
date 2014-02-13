@@ -1,23 +1,32 @@
 <?php
 
-// Array_push example
-// $items = ['First', 'Second', 'Third'];
-// array_push($items, 'Fourth', 'Fifth', 'Sixth');
-// print_r($items);
+// This is the Array_push example
+// Array Push pushes one or more elements onto an array 
+
+// next version of this will have
+// a prompt to the user to enter array elements
+// with a function for input error checking
+// version 2.5 checks 
+// if a function produced expected from the last function?
+// or am I being a spazz here?
+
+$items = ['First', 'Second', 'Third'];
+array_push($items, 'Fourth', 'Fifth', 'Sixth');
+print_r($items);
 
 // array_pop() pops off the element at the end of an array.
 // pop means to both return the value of the element and remove that element from the array
 // the following example of shifting is great!
 
-$items = ['Primi', 'Secundo', 'Tri', 'Tetra', 'Pente'];
+//$items = ['Primi', 'Secundo', 'Tri', 'Tetra', 'Pente'];
 
-echo "The following line does print_r on the items array before the array_shift happens \n";
+// echo "The following line does print_r on the items array before the array_shift happens \n";
 
-print_r($items) . PHP_EOL;
+// print_r($items) . PHP_EOL;
 
-$first_item = array_shift($items);
+// $first_item = array_shift($items);
 
-print_r($items) . PHP_EOL;
+// print_r($items) . PHP_EOL;
 
 
 
