@@ -1,18 +1,23 @@
 <?php
 
+
 $nothing = NULL;
 $something = '';
 $array = array(1,2,3);
 
-// Create a funciton that checks if a variable is set or empty, and display "$variable_name is SET|EMPTY"
+$things = $array($nothing, $something, $array);
 
-function isVARsetorempty($a) {
-		if (isset($a)) {
-			Return TRUE;
-		} else {
-			Return FALSE;
-		}
-	}
+// Create a function that checks if a variable is set or empty, 
+// and then display "$variable_name is SET|EMPTY"
+
+foreach($things as $key => $value) {
+	var_dump($key);
+	var_dump($value);
+	echo "\t\tNanny Nanny Boo Boo! \n";
+	print_r ("$key is $value" . PHP_EOL);
+}
+
+
 
 // TEST: If var $nothing is set, display '$nothing is SET'
 
@@ -23,17 +28,3 @@ function isVARsetorempty($a) {
 // Serialize the array $array, and output the results
 
 // Unserialize the array $array, and output the results
-
-
-// Create the program to meet the criteria set by each comment.
-
-// Test and verify the output is as expected.
-
-// Update the 'is set' check on $something to see if it is 'empty'. What happens?
-
-// Revert previous change.
-
-// Before the first conditional, unset($nothing). What happens?
-
-// Find php.net function reference for the following groups: arrays, math, and strings. Familiarize yourself with the available options by reading the descriptions of each function in each list.
-

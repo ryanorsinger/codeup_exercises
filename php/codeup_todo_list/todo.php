@@ -3,24 +3,6 @@
 // Create array to hold list of todo items
 $items = array();
 
-// Create a function called GET_INPUT. 
-
-function get_input($upper = false) {
-    $input = trim(fgets(STDIN));
-    return $upper ? strtoupper($input) : $input;
-}
-
-// List array items formatted for CLI
-function list_items($items) {  
-    $string = '';
-    foreach ($items as $key => $value) {
-        // we want to avoid changing the original $key value if possible.
-        $newkey = $key + 1;
-        $string = $string . $newkey . "\t" . $value . PHP_EOL;
-    }
-    return $string;
-}
-
 // The loop!
 do {
     // Iterate through list items
