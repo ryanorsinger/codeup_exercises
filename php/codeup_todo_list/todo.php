@@ -3,9 +3,7 @@
 // Create array to hold list of todo items
 $items = array();
 
-// Function library
 
-//
 
 // The loop!
 do {
