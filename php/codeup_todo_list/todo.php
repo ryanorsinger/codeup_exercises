@@ -3,6 +3,10 @@
 // Create array to hold list of todo items
 $items = array();
 
+// Function library
+
+//
+
 // The loop!
 do {
     // Iterate through list items
@@ -36,7 +40,7 @@ do {
 } while ($input != 'Q');
 
 // Say Goodbye!
-echo "Goodbye!\n";
+echo "Thanks and have a great day!\n";
 
 // Exit with 0 errors
 exit(0);

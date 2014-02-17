@@ -8,11 +8,18 @@
 // declare the string
 $physicists_string = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
 
-//explode the string using ',' as the delimeter
-// we initialize a new variable set to the return of explode(string)
 $physicists_array = explode(', ', $physicists_string);
 
-$physicists_string = implode('|', $physicists_array);
-var_dump($physicists_string);
+print_r($physicists_array);
+
+//$famous_fake_physicists = implode()
+
+// create everything
+// pop off the last item
+// store it somewhere else
+// then concatenate it back onto the end of the original string
+
+
+
 
 ?>
