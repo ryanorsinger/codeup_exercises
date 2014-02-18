@@ -1,12 +1,28 @@
 <?php
 
-// if (expression evaluates as TRUE) then {
-// 				then do what's in the brackets }
+//if it's numeric, go return the goods
+function get_input($input) {
+	$input = fgets(STDIN);
+	$value = trim($input);
+	if (is_numeric($value)) {
+		return $value;
+	}
+}
 
 
-$a = 5;
-$b = 10;
-$c = 10;
+fwrite(STDOUT, 'What is the value of $a' . PHP_EOL);
+
+$a = get_input($a);
+
+fwrite(STDOUT, 'What is the value of $b' . PHP_EOL);
+
+$b = get_input($b);
+
+fwrite(STDOUT, 'What is the value of $c' . PHP_EOL);
+
+$c = get_input($c);
+
+echo "\n\n\n";
 
 if ($a == $b) {
 	echo "$a is equal to $b\n";
@@ -18,7 +34,7 @@ if ($a < $b) {
     // output the appropriate result
     echo "$a is less than $b\n";
 } else {
-	echo "$a is greater than $b\n";
+	echo "$a is not less than $b\n";
 	}
 
 if ($b >= $c) {
