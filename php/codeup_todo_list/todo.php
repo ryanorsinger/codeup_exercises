@@ -3,6 +3,15 @@
 // Create array to hold list of todo items
 $items = array();
 
+function list_items($items) {
+
+}
+
+function get_input($upper == FALSE) {
+
+    
+}
+
 // The loop!
 do {
     // Iterate through list items
