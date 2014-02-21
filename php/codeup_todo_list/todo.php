@@ -8,11 +8,11 @@ $items = open_file($filename);
 $new_todos = array();
 
 // Iterate through list items
-function list_items($items) {
-    foreach ($items as $key => $item) {
+function list_items($results) {
+    foreach ($results as $key => $result) {
         // Display each item and key +1
         $j = $key + 1;
-        echo "[{$j}] {$item}\n";
+        echo "[{$j}] {$result}\n";
     }
 }
 
@@ -61,8 +61,7 @@ function sort_menu($items) {
 // The loop!
 do {
     $results = array_merge($items, $new_todos);
-    print_r($results);
-
+    list_items($results);
 
     // Show the menu options
     echo '(S)ave list together as one list, (N)ew item, remove (F)irst item, remove (L)ast item, (R)emove item, (SO)rt, (Q)uit : ';
