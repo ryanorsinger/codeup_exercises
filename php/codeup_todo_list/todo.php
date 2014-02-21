@@ -1,7 +1,11 @@
 <?php
 
 // Create array to hold list of todo items
-$items = array();
+
+$filename = '/Users/Moravia/vagrant-lamp/exercises/data/todo.txt';
+$items = open_file($filename);
+
+$new_todos = array();
 
 // Iterate through list items
 function list_items($items) {
@@ -10,6 +14,15 @@ function list_items($items) {
         $j = $key + 1;
         echo "[{$j}] {$item}\n";
     }
+}
+
+function open_file($filename) {
+    $handle = fopen($filename, "r");
+    $contents = fread($handle, filesize($filename));
+    fclose($handle);
+    $contents_array = explode("\n", $contents);
+    $items = $contents_array;
+    return $items;
 }
 
 
@@ -47,11 +60,12 @@ function sort_menu($items) {
 
 // The loop!
 do {
-    // Echo the list produced by the function
-    echo list_items($items);
+    $results = array_merge($items, $new_todos);
+    print_r($results);
+
 
     // Show the menu options
-    echo '(N)ew item, remove (F)irst item, remove (L)ast item, (R)emove item, (SO)rt, (Q)uit : ';
+    echo '(S)ave list together as one list, (N)ew item, remove (F)irst item, remove (L)ast item, (R)emove item, (SO)rt, (Q)uit : ';
     // Get the input from the
     $input = get_input(TRUE);
 
@@ -63,15 +77,18 @@ switch ($input) {
         // Add entry to list array
         $item_input = get_input();
 
-        echo "Add to (B)eginning or (E)nd of list?";
-        $order = get_input(TRUE);
-
-        if ($order == 'B') {
-            array_unshift($items, $item_input);
-        } else {
-            $items[] = $item_input;
-        }
+        $new_todos[] = $item_input;
         break;
+
+    case 'S':
+        echo "I heard you like merging arrays so I merged your array with an array into an array\n";
+        $handle = fopen($filename, 'w');
+        foreach ($results as $result) {
+            fwrite($handle, PHP_EOL . $result);
+        }
+        fclose($handle);
+        break;
+
 
     case 'R':
         // Remove which item?
